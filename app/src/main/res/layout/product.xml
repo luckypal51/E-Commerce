@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/Product_name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_below="@+id/imageView2"/>
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/Product_name"
+        android:text="100"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_below="@+id/price"
+        android:id="@+id/Add_to_cart"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Add"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
